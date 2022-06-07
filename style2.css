@@ -1,0 +1,173 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    background: linear-gradient(0deg, rgb(167, 165, 165), white 90%) no-repeat;
+}
+
+h2 {
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+p {
+    font-family: 'Cormorant Garamond', serif;
+}
+
+label {
+    font-size: 1.25rem;
+}
+
+#main-carousel {
+    width: 60%;
+    height: 50%;
+    margin: 0 auto;
+}
+
+/* .splide__slide {
+    width: 200px;
+    height: 200px;
+} */
+
+.thumbnails {
+    display: flex;
+    margin: 1rem auto 0;
+    padding: 0;
+    justify-content: center;
+  }
+  
+  .thumbnail {
+    width: 70px;
+    height: 70px;
+    overflow: hidden;
+    list-style: none;
+    margin: 0 0.2rem;
+    cursor: pointer;
+  }
+  
+  .thumbnail img {
+    width: 100%;
+    height: auto;
+  }
+
+  .thumbnail.is-active {
+    opacity: 1;
+  }
+
+
+#up-button {
+    display: none;
+    position: fixed;
+    top: 10%;
+    right: 5%;
+    background: transparent;
+    border: none;
+    font-size: 30px;
+    color: black
+}    
+
+a.nav-link {
+    cursor: pointer;
+}
+
+
+header img {
+    width: 100%;
+    height: auto;
+}
+
+.nav-link {
+    color: rgb(252, 102, 3);
+    font-size: 28px;
+    transition: 1s;
+}
+
+.fa-paw {
+    color: rgb(252, 49, 3);
+}
+
+.nav-link:hover {
+    color: rgb(252, 3, 3);
+    transform: scale(1.1);
+}
+main img {
+    width: 100%;
+    height: auto;
+}
+
+.carousel-item p {
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    color: white;
+    font-size: 46px;
+}
+
+footer {
+    font-size: 20px;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+}
+
+footer i {
+    cursor: pointer;
+    font-size: 40px;
+}
+
+footer i:hover {
+    transform: scale(1.2);
+}
+
+footer a:hover {
+    color: black;
+    transform: scale(1.2);
+}
+
+.media {
+    color: black;
+}
+
+
+@media (max-width: 760px) {
+    .nav-item {
+        width: 100%;
+        text-align: left;    
+        margin-left: 80px;
+    }
+    label {
+        font-size: 26px;
+        font-weight: bold;
+        text-align: center;
+    }
+    p.lead {
+        text-align: justify;
+    }
+    #main-carousel {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0 10px;
+    }
+}
+
+@media (orientation: portrait) {
+    body {
+        background: linear-gradient(0deg, rgb(167, 165, 165), white 95%) no-repeat;
+    }
+    .nav-item {
+        width: 100%;
+        text-align: left;    
+        margin-left: 30px;
+    }
+    .featurette-heading {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}
